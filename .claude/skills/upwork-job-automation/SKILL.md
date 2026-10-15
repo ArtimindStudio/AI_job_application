@@ -7,6 +7,9 @@ description: A workflow for quickly processing and applying to Upwork jobs by up
 
 This skill allows for high-velocity Upwork job processing. It automates the administrative overhead of tracking new job posts and prepares standard but tailored application materials (portfolio selection, workflow explanation, and cover letter drafts).
 
+## 0. Upwork MCP connector (preferred when connected)
+If `upwork__*` tools are available, follow `docs/upwork_mcp.md`. Find jobs with the connector, read live Connects and client data, and draft proposals there. Never call `confirm_draft` or spend Connects without Dennis's approval of that batch in chat. If the tools aren't available, fall back to job posts Dennis pastes.
+
 ## 1. Quick Stats & Workflow
 - **Input**: New Upwork job description and requirements.
 - **Airtable Integration**: Automatically updates the `Jobs` table in the Airtable base (`appSTxBDPzcjMcIvu`). Use the `AIRTABLE_PAT` and table/base IDs from the `.env` file.

@@ -33,10 +33,13 @@ GEO_BAD = (r"(us only|usa only|united states only|us-based|u\.s\. only|must be l
            r"uk only|europe only|eu only|latam only|philippines-based)")
 GEO_OK = r"(worldwide|anywhere|vietnam|asia|apac|global|^$|^remote$)"
 
-for line in (ROOT / ".env").read_text().splitlines():
-    if "=" in line and not line.startswith("#"):
-        k, v = line.split("=", 1)
-        os.environ.setdefault(k.strip(), v.strip())
+# Local runs read .env; cloud runs get IDs from env vars and the token injected by the network proxy.
+ENV_FILE = ROOT / ".env"
+if ENV_FILE.exists():
+    for line in ENV_FILE.read_text().splitlines():
+        if "=" in line and not line.startswith("#"):
+            k, v = line.split("=", 1)
+            os.environ.setdefault(k.strip(), v.strip())
 
 
 def clean(s):
@@ -139,14 +142,17 @@ def remote_rocketship(max_pages=3):
 
 
 def airtable_existing():
-    h = {"Authorization": f"Bearer {os.environ['AIRTABLE_PAT']}"}
+    pat = os.environ.get("AIRTABLE_PAT")
+    h = {"Authorization": f"Bearer {pat}"} if pat else {}  # no PAT: the cloud proxy injects it
     url = f"https://api.airtable.com/v0/{os.environ['AIRTABLE_BASE_ID']}/{os.environ['AIRTABLE_TABLE_ID']}"
     titles, urls, off = set(), set(), None
     while True:
         p = {"fields[]": ["Title", "Job URL"]}
         if off:
             p["offset"] = off
-        r = requests.get(url, headers=h, params=p).json()
+        r = requests.get(url, headers=h, params=p, timeout=30)
+        r.raise_for_status()
+        r = r.json()
         for x in r["records"]:
             titles.add(x["fields"].get("Title", "").lower())
             urls.add(x["fields"].get("Job URL", ""))

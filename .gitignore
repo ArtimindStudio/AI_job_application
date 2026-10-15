@@ -1,0 +1,21 @@
+# secrets
+.env
+.env.*
+!.env.example
+payload*.json
+connects_raw.txt
+parsed_docx.txt
+
+# personal documents and large binaries
+*.docx
+*.pdf
+*.mp4
+*.mov
+*.zip
+
+# local tooling
+__pycache__/
+*.pyc
+Recovered Codex Sessions/
+dennisbui.github.io/
+scripts/weekly_scan_hits.json

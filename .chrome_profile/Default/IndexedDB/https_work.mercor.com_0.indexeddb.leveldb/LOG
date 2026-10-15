@@ -1,0 +1,3 @@
+2026/05/28-11:20:27.562 4d40 Creating DB d:\Projects\Upwork\.chrome_profile\Default\IndexedDB\https_work.mercor.com_0.indexeddb.leveldb since it was missing.
+2026/05/28-11:20:27.575 4d40 Reusing MANIFEST d:\Projects\Upwork\.chrome_profile\Default\IndexedDB\https_work.mercor.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/05/28-11:20:27.767 6dc4 Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)

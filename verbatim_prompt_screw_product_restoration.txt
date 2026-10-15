@@ -1,0 +1,39 @@
+This is a real photograph of a stainless steel fastener that is out of focus
+and low resolution. Restore it to a sharp, high-resolution photograph.
+Recover the real detail that is already present in the source. Do not
+reinterpret, redesign or replace the object. Preserve exactly: the number of
+objects, their position, scale, rotation and angle in frame, the shape and
+proportions of every part, the thread pitch and the number of thread turns,
+the drive type and the head form, and the metal colour and tone. The output
+must be the same object as the input, simply in focus.
+Recover it as a real photograph, not a rendering:
+Lighting — one large softbox above and camera left, with negative fill camera
+right producing a clear bright-to-dark falloff across every cylindrical and
+curved surface. Real metal reads as metal because of this contrast, never
+from flat even illumination. A single bright specular band along the length
+of any shank or the crown of any curved face, falling away to darker grey on
+the opposite side. Deep, nearly black occlusion in every thread root,
+recess, socket, bore and undercut.
+Threads, where present — one continuous helix spiralling around the shank,
+crests stepping diagonally, the near and far side of each turn offset. Never
+stacked concentric rings, never symmetrical bands.
+Surface — real cold-formed and machined A2-304 stainless. Satin brushed
+finish, cool neutral grey. Fine circular machining grain, faint tooling
+marks, light micro-scratches, minor surface irregularity. A handled, real
+part, not a flawless one. Never mirror chrome, never polished chrome.
+Optics — macro lens rendering, natural depth of field with gentle focus
+falloff away from the plane of focus, subtle lens character. Not uniformly
+sharp edge to edge.
+Background — pure flat white, unchanged from the source. No shadow, no
+reflection, no gradient, no added elements.
+Remove all text, letters, numbers, engraved markings, stamps and logos from
+the part. Leave the surface bare.
+Output a photograph.
+Negative prompt:
+3d render, CGI, computer graphics, blender, octane, keyshot, CAD, vector,
+illustration, digital art, drawing, cartoon, clay, plastic, toy, flat
+lighting, even lighting, uniform illumination, no contrast, stacked rings,
+symmetrical thread bands, uniformly sharp, infinite depth of field, flawless
+surface, sterile, oversmoothed, waxy, text, letters, numbers, engraving,
+logo, watermark, chrome, mirror, gold, brass, warm tint, rust, shadow,
+coloured background, extra objects, changed composition

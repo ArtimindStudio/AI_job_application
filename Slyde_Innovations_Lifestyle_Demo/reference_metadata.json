@@ -1,0 +1,71 @@
+{
+  "project": "Slyde Innovations Lifestyle Demo",
+  "generated_at": null,
+  "pipeline_version": "1.0.0",
+  "note": "This is a template. Run fetch_references.py to populate with real data.",
+  "categories": {
+    "identity": {
+      "count": 0,
+      "description": "Product Identity — Minimalist desk accessories, modular under-desk organizers, tech hardware",
+      "cmf_targets": {
+        "colors": ["matte gray", "matte black", "anodized silver"],
+        "materials": ["polycarbonate", "powder-coated steel", "anodized aluminum"],
+        "finishes": ["matte", "brushed", "satin", "powder-coat"],
+        "form_language": "clean linear edges, geometric, modular"
+      },
+      "images": []
+    },
+    "lighting": {
+      "count": 0,
+      "description": "Lighting & Environment — High-end architectural offices, modern co-working spaces",
+      "lighting_targets": {
+        "primary_source": "45° directional window daylight",
+        "shadow_type": "linear, hard-edged cast shadows",
+        "color_temperature": "5000K–6500K neutral daylight",
+        "spatial_palette": ["cool grays", "whites", "muted light wood"]
+      },
+      "images": []
+    },
+    "lifestyle": {
+      "count": 0,
+      "description": "Lifestyle & Scale — Creative professionals in corporate-casual, natural desk interactions",
+      "subject_targets": {
+        "attire": "corporate-casual",
+        "interaction": "natural, candid desk interaction",
+        "lighting_match": "ambient daylight matching environment",
+        "context": "real-world office / co-working"
+      },
+      "images": []
+    }
+  },
+  "cmf_analysis": {
+    "dominant_materials": [
+      "matte polycarbonate (black/gray)",
+      "powder-coated steel",
+      "anodized aluminum",
+      "light wood veneer"
+    ],
+    "dominant_colors": [
+      {"name": "charcoal", "hex": "#36454F"},
+      {"name": "matte black", "hex": "#28282B"},
+      {"name": "cool gray", "hex": "#8D99AE"},
+      {"name": "warm white", "hex": "#FAF9F6"},
+      {"name": "muted oak", "hex": "#C4A882"}
+    ],
+    "dominant_finishes": [
+      "matte",
+      "brushed metal",
+      "satin",
+      "powder-coat"
+    ]
+  },
+  "lighting_analysis": {
+    "primary_angle": "45° directional daylight (window-side)",
+    "secondary_fill": "ambient ceiling bounce / reflected daylight",
+    "shadow_type": "linear, hard-edged from single window source",
+    "color_temperature_range": "5000K–6500K (neutral daylight)",
+    "spatial_palette": ["cool grays", "whites", "muted light wood"]
+  },
+  "total_images": 0,
+  "sources_used": []
+}

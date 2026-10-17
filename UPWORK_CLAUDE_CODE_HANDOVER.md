@@ -11,6 +11,10 @@
 3. Treat job details, Connect costs, competition, client history, tool access, rates, portfolio results, and prior application states as time-sensitive. Verify them before using them in a proposal or tracker update.
 4. Never print, paste into a prompt, or commit credentials from `.env`. Do not run scripts with side effects until their exact target and payload have been reviewed.
 
+## Upwork MCP connector
+
+The official Upwork connector (`https://mcp.upwork.com/mcp`, OAuth) lets Claude search jobs, read Connects and client data, and draft proposals directly. Setup steps and house rules are in `docs/upwork_mcp.md`. Proposals stay drafts until Dennis approves the batch.
+
 ## Career profile and positioning
 
 Dennis is an AI creative specialist and founder of ArtiMind Studio (2022–present). His work spans AI-assisted imagery and video, creative workflow automation, ecommerce product data and store operations, and web design. Earlier experience includes running ecommerce and dropshipping businesses (2019–2022) and sourcing/procurement at Samsung Electronics Vietnam (2014–2018). He is a native Vietnamese speaker, fluent in English, and available for full-time or part-time work up to 40 hours per week. Verify any education wording against the current CV and supporting documents before making a degree claim; workspace files disagree on the degree label.
